@@ -1,1 +1,29 @@
+/ Program 1
+// program to convert celcius to fahrenite
+#include < iostream› using namespace std;
 
+int main () {
+     double celcius;
+     doubler fahrenite;
+     cin >> celcius;
+
+     ( celcius * 9.0/5.0) +32;
+    cout << fahreneit <<endl;
+    return 0;
+}
+
+
+/ Program 2
+// Local and Global Variable
+#include < iostream› using namespace std;
+int globalvariable = 100;
+int
+mainO) {
+int localvariable; int result;
+cin
+>> localvariable;
+result = (globalvariable / localvariable);
+cout
+« result ‹< endl;
+return 0;l
+}
