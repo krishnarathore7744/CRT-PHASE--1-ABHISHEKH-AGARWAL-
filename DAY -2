@@ -95,3 +95,27 @@ int main () {
 
   return0;
 }
+
+
+// Problem -- 6
+
+#include <iostream>
+using namespace std;
+int main () {
+   int choice;
+   cin >> choice;
+
+   switch (choice) {
+     case 1:
+     cout «" Transferring call to the support team...";
+     case 2: 
+     cout <<" Transforming call of the billing and accounts department...";
+     case 3: 
+     cout <<" Connecting call to technical team...";
+     case 4:
+     cout <<" "Please wait while we are connecting your call to an agent...";
+     break; 
+     default:
+     cout << "Enter a valid choice...";
+    }
+}
