@@ -1,4 +1,4 @@
-// Problem -- 1 if statement
+// Problem -- 2 if statement
 #include <iostream›
 using namespace std;
 int main() {
