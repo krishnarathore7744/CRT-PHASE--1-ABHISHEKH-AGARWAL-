@@ -39,3 +39,22 @@ int main() {
     }
     return 0;
 }
+
+
+
+// Problem -- 3 using terenary operators 
+#include <iostream>
+using namespace std;
+
+int main () {
+    int a,b;
+    int max_number;
+    cout<<" enter 1st num:";
+    cin>>a;
+    cout<<"enter 2nd num:";
+    cin>>b;
+    
+    max_number = (a > b) ? a : b;
+    cout<<max_number;
+    return 0;
+}
