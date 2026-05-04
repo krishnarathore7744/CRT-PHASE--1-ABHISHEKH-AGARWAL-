@@ -65,3 +65,56 @@ int main(){
     }
 }
 
+Program 5 (Hollow Square and rectangle by user input)
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x, y;
+    
+    cout << "Enter Number of columns-: ";
+    cin >> x;
+    cout << "Enter number of rows-: ";
+    cin >> y;
+    
+    for(int i = 1; i <= x; i++){
+        for(int j = 1; j <= y; j++){
+            if (i == 1 || i == x || j == 1 || j == y) {
+                cout << "* ";
+            } else {
+                cout << "  "; 
+            }
+        }
+        cout << '\n';
+    } 
+    
+    return 0;
+}
+
+Program 6 (Mirror RIght angle trianle)
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows;
+    cout << "Enter number of rows: ";
+    cin >> rows;
+
+    for (int i = 1; i <= rows; i++) {
+        for(int j=1; j<=rows-i ; j++){
+            cout << "  ";
+        }
+        for (int j = 1; j <= i; j++) {
+            cout << "* ";
+        }
+        
+        cout << '\n';
+      
+    }
+
+    return 0;
+}
