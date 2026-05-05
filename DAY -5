@@ -81,3 +81,30 @@ int main(){
     bellRing();
 
 }
+
+// Program 5.2 -- argument, no return values 
+
+#include <iostream>
+using namespace std;
+
+void sendMessage(string message) {
+    cout << message;
+}
+
+int main() {
+    sendMessage("BJP wons...");
+}
+
+// Program 5.3 -- No argument, return values 
+
+#include <iostream>
+using namespace std;
+
+int ticketNumber(){
+    return 101;
+}
+
+int main() {
+    cout << ticketNumber();
+}
+
