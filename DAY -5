@@ -108,3 +108,37 @@ int main() {
     cout << ticketNumber();
 }
 
+
+// Program 6 
+// currency convertor 
+
+#include <iostream>
+using namespace std;
+ int currencyConversion (int amountInUSD) {
+       return amountInUSD / 100;
+  }
+int main() {
+   cout << currencyConversion(1000);
+     return 0;
+    }
+
+// program 7
+// function overloading 
+
+#include <iostream>
+using namespace std;
+
+int add(int a, int b){
+    return a+b;
+}
+
+int add(int a, int b, int c){
+    return a+b+c;
+}
+
+int main() {
+    cout << add(5,2) << "\n";
+    cout << add(5,2,3) << "\n";
+    cout << add(5.5, 2.3);
+}
+
