@@ -68,7 +68,7 @@ int main() {
 
 // Program 5
 // types of functions
-// program 5.1 -- no arguments
+// program 5.1 -- no arguments no return values
 
 #include <iostream>
 using namespace std;
@@ -103,7 +103,6 @@ using namespace std;
 int ticketNumber(){
     return 101;
 }
-
 int main() {
     cout << ticketNumber();
 }
