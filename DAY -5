@@ -35,3 +35,19 @@ int main() {
     cout << c;
 }
 
+// proble 3 
+// function making practice 
+
+#include <iostream>
+using namespace std;
+
+void printMessage(){
+    cout << "Hi we are learning functions...";
+}
+
+int main() {
+    // function calling
+    printMessage();
+    return 0;
+}
+
