@@ -1,1 +1,28 @@
+// Program -- 1 
+// coffee billing system
 
+#include <iostream>
+using namespace std;
+
+int billing(int a) {
+    return a * 30;
+    
+}
+int main() {
+    cout << billing(5);
+}
+
+// Program -- 2 
+// Store discount application // Program 
+// find 10% -- amount * 0.10
+// discount amount -- amount - 10% vala amount
+
+#include <iostream>
+using namespace std;
+
+int billing(int a) {
+    return(a - a*0.10);
+}
+int main() {
+    cout << billing(50);
+}
