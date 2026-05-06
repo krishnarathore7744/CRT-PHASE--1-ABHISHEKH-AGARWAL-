@@ -26,3 +26,34 @@ int main() {
     cout << billing(50);
 }
 
+// Program -- 3  
+// Smart AC remote 
+// 1. turn on -- 22°C
+// 2. input -- 20.5 -- Temprature set -- 20.5°C
+// 3. input -- ECO -- Temperature set -- 24°C
+// 4. input. -- Turbo -- Temperature set -- 18°C
+
+#include <iostream>
+using namespace std;
+
+void setTemperature() {
+    cout << "Temperature set to 22°C" << "\n";
+}
+
+void setTemperature(double temp) {
+    cout << "Temperature set to " << temp<< "C" << "\n";
+}
+
+void setTemperature(string mode) {
+    if(mode == "ECO") {
+        cout << "Temperature set to 24°C" << "\n";
+    } else if (mode == "Turbo") {
+        cout << "Temperature set to 18°C" << "\n";
+    }
+}
+int main() {
+    setTemperature();
+    setTemperature(20.5);
+    setTemperature("ECO");
+    
+}
