@@ -6,7 +6,6 @@ using namespace std;
 
 int billing(int a) {
     return a * 30;
-    
 }
 int main() {
     cout << billing(5);
@@ -26,3 +25,4 @@ int billing(int a) {
 int main() {
     cout << billing(50);
 }
+
