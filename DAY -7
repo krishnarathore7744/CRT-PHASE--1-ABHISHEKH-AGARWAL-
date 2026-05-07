@@ -1,1 +1,145 @@
+//PROGRAM -- 1
+
+#include <iostream>
+using namespace std;
+
+void updatebyvalue(int a){
+    a = 500;
+}
+void updateByRefrence(int &a){
+    a = 500;
+}
+
+int main() {
+    int original = 100;
+    updatebyvalue(original);
+    cout << original << "\n";
+   updateByRefrence(original);
+   cout << original;
+
+    return 0;
+}
+
+
+/PROGRAM -- 2
+//Access Specifier
+//Private
+
+#include <iostream>
+using namespace std;
+
+class BankAccount{
+private:
+   int balance = 1000000;
+   
+public:   
+  void showbalance(){
+      cout << balance;
+}
+};
+int main(){
+    BankAccount obj1;
+    obj1. showbalance();
+
+    return 0;
+}
+
+//PROGRAM -- 3
+//Access Specifier
+//Protected
+
+#include <iostream>
+using namespace std;
+
+class Parent {
+protected:
+    int secretCode = 12390;
+};
+
+class child : public Parent {
+public:
+    void accessLocker(){
+        cout << secretCode;
+    }
+};
+int main() {
+    child obj1;
+    obj1.accessLocker();
+   
+
+    return 0;
+}
+
+
+// Program 4 
+// default constructor 
+
+#include <iostream>
+using namespace std;
+
+class wifiConnection {
+public:
+    string networkName;
+    int password;
+
+    wifiConnection() {
+        networkName = "Act fiber Net";
+        password = 1234;
+    } 
+    
+void showDetails(){
+    cout << networkName << " " <<password;
+    }
+};
+
+int main() {
+    wifiConnection obj1;
+    obj1.showDetails();
+}
+
+// Program 5
+// constructor overloading 
+#include<iostream>
+using namespace std;
+
+class Rectangle {
+public:
+    int length;
+    int width;
+
+    // constructor - 1 (Default constructor)
+    Rectangle() {
+        length = 100;
+        width = 209;
+    }
+
+    // constructor - 2 (Parameterized constructor)
+    Rectangle(int l) {
+        length = l;
+        width = 209;
+    }
+
+    // constructor - 3 (Parameterized constructor)
+    Rectangle(int l, int b) {
+        length = l;
+        width = b;
+    }
+
+    void area() {
+        cout << width * length << endl;
+    }
+};
+
+int main() {
+    Rectangle r1;
+    r1.area();
+
+    Rectangle r2(100);
+    r2.area();
+    
+    Rectangle r3(100,200);
+    r3.area();
+
+    return 0;
+}
 
