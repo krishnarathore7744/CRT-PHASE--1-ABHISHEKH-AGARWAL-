@@ -57,7 +57,7 @@ int main() {
     obj1.speed();
 }
 
-// Problem -- 2 
+// Problem -- 3 
 // Types if Inheritance
 // 1.3 -- Hererical Inheritance
 
@@ -123,3 +123,30 @@ int main() {
     c.paisedopapa();
 }
 
+// Problem -- 5 
+// Types Multiple Inheritance
+// 1.5 hybrid Inheritance -- diamond problem solution -- virtual base class 
+
+#include <iostream>
+using namespace std;
+
+class A {
+public:
+    void print() {
+        cout <<"hi there...";
+    }
+};
+
+class B : virtual public A {
+ // No Logic
+};
+class C : virtual public A {
+ // No Logic
+ };
+class D : virtual public B , public C {
+ // No Logic
+};
+int main() {
+    D obj1;
+    obj1.print();
+}
