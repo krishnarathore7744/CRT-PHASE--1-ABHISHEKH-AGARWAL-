@@ -56,5 +56,70 @@ int main() {
     obj1.start();
     obj1.speed();
 }
-  
+
+// Problem -- 2 
+// Types if Inheritance
+// 1.3 -- Hererical Inheritance
+
+#include <iostream>
+using namespace std;
+
+class vehicle {
+public:
+    void start() {
+        cout <<"vehicle starts" <<"\n";
+    }
+};
+
+class bike {
+public:
+    void drive() {
+        cout <<"bike is running" <<"\n"; 
+    }
+};
+ class Car : public vehicle {
+public:
+    void drive() {
+        cout << "Car is running" << "\n"; 
+    }
+ };
+
+
+int main() {
+    Car c;
+    bike b;
+    c.start();
+    c.drive();
+    b.drive();
+}
+
+#include <iostream>
+using namespace std;
+
+//problem --4
+//types of inheritance
+//1.4---multiple inheritance
+
+class parent1{
+public:
+   void paiseDoMummy() {
+       cout <<"Mummy paise de do bahar jana hai..." << "\n";
+   }
+};
+
+class parent2{
+public:
+     void paisedopapa(){
+         cout <<"papa paise de do virtus lanni hai...";
+     }
+};
+
+class child : public parent1, public parent2 {
+};
+
+int main() {
+    child c;
+    c.paiseDoMummy();
+    c.paisedopapa();
+}
 
